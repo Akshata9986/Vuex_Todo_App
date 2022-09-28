@@ -1,17 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <add-todo />
+  <delete-todo />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AddTodo from "./components/AddTodo.vue";
+import DeleteTodo from "./components/DeleteTodo.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    AddTodo,
+    DeleteTodo,
+  },
+};
 </script>
 
 <style>
